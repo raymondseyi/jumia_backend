@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9 mx-auto shadow-sm py-4 my-4">
+                <h1 class="text-center">Add your products here !</h1>
+                <h2 class="text-center">View All Products <a href="/admin/allproducts">Here</a></h2>
+                <form action="/admin/products" method="POST">
+                    <input type="text" placeholder="Product Name" class="form-control my-2" name="product_name" >
+                    <input type="text" placeholder="Product Price" class="form-control my-2" name="product_price">
+                    <input type="text" placeholder="Product Quantity" class="form-control my-2" name="product_quantity">
+                    <input type="text" placeholder="Image" class="form-control my-2" name="product_image">
+                    <button class="btn btn-success w-100 py-2 my-2">Add Products</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+   
+</body>
+</html>
