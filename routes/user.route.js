@@ -1,9 +1,11 @@
 const express = require("express")
 const router = express.Router()
-const {displayProducts, getUserDetails, saveUserDetails,addToCart, increaseQuantityOfItem} = require("../controllers/user.controller")
+const {displayProducts, getUserDetails, saveUserDetails,addToCart, increaseQuantityOfItem, authenticateUser, getDashboard} = require("../controllers/user.controller")
 router.get("/",displayProducts)
 router.get("/signup",getUserDetails)
 router.post("/saveuserdetails",saveUserDetails)
 router.post("/addtocart",addToCart)
 router.post("/increaseproductquantity",increaseQuantityOfItem)
+router.post("/signin",authenticateUser)
+router.get("/dashboard",getDashboard)
 module.exports = router
